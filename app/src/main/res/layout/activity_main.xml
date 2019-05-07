@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:text="Split Bill App"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark" />
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="385dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".60"
+            android:text="Bill Amount:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="385dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".40"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pax"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".60"
+            android:text="Total Pax:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/people"
+            android:layout_width="385dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".40"
+            android:gravity="right"
+            android:inputType="number"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="465dp"
+        android:layout_height="16dp"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/addons"
+            android:layout_width="22dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".35"
+            android:text="Bill AddOns:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/gst"
+            android:layout_width="18dp"
+            android:layout_height="51dp"
+            android:layout_weight=".20"
+            android:checked="false"
+            android:clickable="true"
+            android:focusable="auto"
+            android:gravity="left"
+            android:text="GST"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/sc"
+            android:layout_width="34dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".45"
+            android:checked="false"
+            android:clickable="true"
+            android:gravity="left"
+            android:text="Service Charge"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="390dp"
+            android:layout_height="45dp"
+            android:layout_weight=".60"
+            android:text="Discount Applicable:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/discounted"
+            android:layout_width="385dp"
+            android:layout_height="45dp"
+            android:layout_weight=".40"
+            android:gravity="right"
+            android:inputType="number"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/background_dark" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:text="Calculate"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/totalcost"
+            android:layout_width="163dp"
+            android:layout_height="45dp"
+            android:layout_weight=".60"
+            android:text="Total Bill:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/totvalue"
+            android:layout_width="176dp"
+            android:layout_height="45dp"
+            android:layout_weight=".40"
+            android:gravity="left"
+            android:hint="Value"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/perpax"
+            android:layout_width="161dp"
+            android:layout_height="45dp"
+            android:layout_weight=".60"
+            android:text="Split Bill:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/splitvalue"
+            android:layout_width="176dp"
+            android:layout_height="45dp"
+            android:layout_weight=".40"
+            android:gravity="left"
+            android:hint="Value"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:text="Reset"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</LinearLayout>
